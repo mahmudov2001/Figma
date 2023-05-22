@@ -1,14 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto+Slab:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+body{
+    padding-left: 100px;
+    padding-right: 30px;
+}
 h1{
-    margin-left: 120px;
-    font-family: "Roboto Slab";
+    font-family: "Roboto Slab", serif;
 }
 .main{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    font-family: "Roboto";
+    justify-content: space-between;
+    font-family: "Roboto", sans-serif;
 }
 .paragraphy{
     width: 662px;
@@ -17,29 +20,38 @@ h1{
     line-height: 36px;
     letter-spacing: 0em;
     text-align: left;
+    margin-right: 10px;
 }
 .footer{
-    margin-right: 300px;
-    font-family: 'Roboto';
+    font-family: 'Roboto',sans-serif;
     align-items: center;
     margin-top: 50px;
     display: flex;
     justify-content: space-between;
 }
 .hour{
-    width:150px;
+    margin-inline: 15px;
 }
 .picture{
-    margin-left:120px;
+    margin-right: 10px;
 }
-@media (max-width:834px){
+@media (max-width: 1096px){
+    .paragraphy{       
+        font-size: 22px;
+        line-height: 21px;
+    }
+}
+@media (max-width: 1024px){
+    body{
+        padding-left: 60px;
+        padding-right: 10px;
+    }
     .picture{
         display: none;
+        margin-right: 0px;
     }
     h1{
         font-size: 32px;
-        margin-left: 60px;
-
     }
     .paragraphy{
         width: 383px;
@@ -47,24 +59,25 @@ h1{
         line-height: 21px;
     }
     .first{
-        width: 181px;
-        height: 182px;
+        width: 300px;
+        height: 270px;
         margin-bottom: 10px;
     }
     .hour{
         font-size: 14px;
-        width: 120px;
+        margin-inline: 15px;
     }
     .footer{
-        margin-left:60px;
-        width: 500px;
         justify-content:space-between;
     }
 }
-@media (max-width:375px){
+@media (max-width:675px){
+    body{
+        padding-left: 30px;
+        padding-right: 5px;
+    }
     h1{
         font-size: 26px;
-        margin-left:25px;
     }
     .main{
         display: flex;
@@ -81,11 +94,10 @@ h1{
     }
     .hour{
         font-size: 11px;
-        width: 90px;
+        margin-inline: 15px;
     }
     .footer{
         flex-wrap: wrap;
-        width:210px;
         margin: 0;   
     }
 }
